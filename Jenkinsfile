@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = '$PROJECT_ID'
         CLUSTER_NAME = '$CLUSTER_NAME'
         LOCATION = '$CLUSTER_LOCATION'
-        CREDENTIALS_ID = '$CREDENTIALS_ID'
+        CREDENTIALS_ID = "$CREDENTIALS_ID"
     }
     stages {
         stage('Deploy to GKE') {
