@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = '$PROJECT_ID'
-        CLUSTER_NAME = '$CLUSTER_NAME'
-        LOCATION = '$CLUSTER_LOCATION'
+        PROJECT_ID = "$PROJECT_ID"
+        CLUSTER_NAME = "$CLUSTER_NAME"
+        LOCATION = "$CLUSTER_LOCATION"
         CREDENTIALS_ID = "$CREDENTIALS_ID"
     }
     stages {
