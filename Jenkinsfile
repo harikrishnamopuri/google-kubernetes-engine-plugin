@@ -14,7 +14,7 @@ pipeline {
                 projectId: env.PROJECT_ID,
                 clusterName: env.CLUSTER_NAME,
                 location: env.LOCATION,
-                manifestPattern: 'docs/resources/bookinfo.yml',
+                manifestPattern: 'docs/resources/manifest.yaml',
                 credentialsId: env.CREDENTIALS_ID,
                 verifyDeployments: true])
             }
