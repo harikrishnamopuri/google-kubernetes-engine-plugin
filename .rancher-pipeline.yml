@@ -3,7 +3,7 @@ stages:
   steps:
   - applyAppConfig:
       catalogTemplate: c-75p2b:my-helm-chart-bookinfo
-      version: 0.1.5
+      version: 0.1.6
       name: bookinfo
       targetNamespace: default
 timeout: 60
