@@ -1,0 +1,17 @@
+stages:
+- name: deploy app
+  steps:
+  - applyAppConfig:
+      catalogTemplate: c-75p2b:my-helm-chart-bookinfo
+      version: 0.1.6
+      name: bookinfo
+      targetNamespace: default
+timeout: 60
+notification:
+  recipients:
+  - recipient: hkrishna294@gmail.com
+    notifier: c-75p2b:n-q94l2
+  condition:
+  - Success
+  - Changed
+  - Failed
