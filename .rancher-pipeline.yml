@@ -2,10 +2,10 @@ stages:
 - name: deploy app
   steps:
   - applyAppConfig:
-      catalogTemplate: c-75p2b:my-helm-chart-bookinfo
+      catalogTemplate: cattle-global-data:my-helm-charts-bookinfo
       version: 0.1.6
       name: bookinfo
-      targetNamespace: default
+      targetNamespace: p-nndws-pipeline
 timeout: 60
 notification:
   recipients:
