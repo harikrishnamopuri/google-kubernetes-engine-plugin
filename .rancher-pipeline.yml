@@ -6,6 +6,13 @@ stages:
       version: 2.3.1
       name: chart
       targetNamespace: sde
+- name: test
+  steps:
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:library-wordpress
+      version: 9.0.3
+      name: wordpress
+      targetNamespace: cattle-prometheus-p-nndws
 timeout: 60
 notification:
   recipients:
