@@ -2,15 +2,15 @@ stages:
 - name: deploy app
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:my-helm-charts-bookinfo
-      version: 0.1.6
-      name: bookinfo
+      catalogTemplate: cattle-global-data:library-chartmuseum
+      version: 2.3.1
+      name: chart
       targetNamespace: sde
 timeout: 60
 notification:
   recipients:
   - recipient: hkrishna294@gmail.com
-    notifier: c-75p2b:n-q94l2
+    notifier: c-48p6x:n-8rhhj
   condition:
   - Success
   - Changed
