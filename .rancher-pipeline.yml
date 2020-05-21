@@ -11,6 +11,8 @@ stages:
   - applyAppConfig:
       catalogTemplate: cattle-global-data:library-wordpress
       version: 9.0.3
+      answers:
+        Name: hari
       name: wordpress
       targetNamespace: cattle-prometheus-p-nndws
 timeout: 60
